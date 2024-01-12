@@ -11,8 +11,9 @@ def print_board(board):
 
 
 def print_board(board):
+    print("------Battleship------")
     print("  A B C D E F G H I J")
-    print("  *-*-*-*-*-*-*-*-*-*")
+    print("  ===================")
     row_number = 1
     for row in board:
         print("%d|%s|" % (row_number, "|".join(row)))
