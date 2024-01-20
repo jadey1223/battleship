@@ -59,5 +59,15 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 5. Upon selection, the page will automatically refresh meaning that the website is now deployed.
 6. Scroll back down to the "Pages" section to retrieve the deployed link.
 
+## Code 
 
+ To gain a deeper understanding of coding i have used theses resources. 
+
+* [W3Schools](https://www.w3schools.com/)
+
+* [Stack overflow](https://stackoverflow.com/)
+- YouTube tutorials
+     -  * [YouTube](https://www.youtube.com/watch?v=tF1WRCrd_HQ&ab_channel=KnowledgeMavens)
+    
+    
 
