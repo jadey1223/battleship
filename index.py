@@ -27,7 +27,7 @@ def print_board(board):
     print("  ===================")
     row_number = 1
     for row in board:
-        print("%d|%s|" % (row_number, "|".join(row)))
+        print("%d|%s|" % (row_number, "*|*".join(row)))
         row_number += 1
         
 letters_to_numbers = {
@@ -53,7 +53,7 @@ def create_ships(board):
         
 def get_ship_location():
     row = input("Enter the row of the ship: ").upper()
-    while row not in "12345678":
+    while row not in "123456789":
         print('Not an appropriate choice, please select a valid row')
         row = input("Enter the row of the ship: ").upper()
     column = input("Enter the column of the ship: ").upper()
