@@ -1,5 +1,16 @@
 from random import randint
 
+"""
+----- Welcome to BATTLESHIPS -----
+
+How to play:
+
+1. 
+
+
+
+"""
+
 #Board for holding ship locations
 HIDDEN_BOARD = [[" "] * 9 for x in range(9)]
 # Board for displaying hits and misses
@@ -27,7 +38,9 @@ letters_to_numbers = {
     'E': 4,
     'F': 5,
     'G': 6,
-    'H': 7
+    'H': 7,
+    'I': 8,
+    'J': 9
 }
 
 #computer create 5 ships

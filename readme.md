@@ -69,5 +69,5 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 - YouTube tutorials
      -  * [YouTube](https://www.youtube.com/watch?v=tF1WRCrd_HQ&ab_channel=KnowledgeMavens)
     
-    
+ * [Python cheatsheet](https://www.pythoncheatsheet.org)   
 
