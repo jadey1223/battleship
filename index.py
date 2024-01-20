@@ -6,9 +6,16 @@ from random import randint
 How to play:
 
 1. There will be eight ships of varying length arranged at random across a 10 by 10 grid.
-2. 
+2. You will have 25 turns to sink all ships.
+3. You can designate where to shoot by selecting a row and column, like A1.
+4. For every shot that hits or misses it will show up in the grid.
+5. A ship cannot be placed diagonally, so if a shot hits the rest of the ship is in one of 4 directions, left, right up, and down.
 
-
+ Legend:
+ 
+    1. " " = water or empty space
+    2. "O" = Indicator that you missed the target
+    3. "X" = part of ship that was hit with bullet
 
 """
 
@@ -143,7 +150,7 @@ def count_hit_ships(board):
 
 if __name__ == "__main__":
     create_ships(HIDDEN_BOARD)
-    turns = 10
+    turns = 25
     while turns > 0:
         print('Guess a battleship location')
         print_board(GUESS_BOARD)
@@ -156,7 +163,7 @@ if __name__ == "__main__":
             turns -= 1  
         else:
             print("MISS!")
-            GUESS_BOARD[row][column] = "0"   
+            GUESS_BOARD[row][column] = "O"   
             turns -= 1     
         if count_hit_ships(GUESS_BOARD) == 5:
             print("You win!")
