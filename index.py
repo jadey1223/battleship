@@ -5,7 +5,8 @@ from random import randint
 
 How to play:
 
-1. 
+1. There will be eight ships of varying length arranged at random across a 10 by 10 grid.
+2. 
 
 
 
@@ -27,7 +28,7 @@ def print_board(board):
     print("  ===================")
     row_number = 1
     for row in board:
-        print("%d|%s|" % (row_number, "*|*".join(row)))
+        print("%d|%s|" % (row_number, "|".join(row)))
         row_number += 1
         
 letters_to_numbers = {
@@ -40,7 +41,7 @@ letters_to_numbers = {
     'G': 6,
     'H': 7,
     'I': 8,
-    'J': 9
+    'J': 9,
 }
 
 #computer create 5 ships
@@ -86,7 +87,7 @@ if __name__ == "__main__":
             turns -= 1  
         else:
             print("MISS!")
-            GUESS_BOARD[row][column] = "-"   
+            GUESS_BOARD[row][column] = "0"   
             turns -= 1     
         if count_hit_ships(GUESS_BOARD) == 5:
             print("You win!")
