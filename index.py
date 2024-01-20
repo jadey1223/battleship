@@ -24,17 +24,21 @@ HIDDEN_BOARD = [[" "] * 9 for x in range(9)]
 # Board for displaying hits and misses
 GUESS_BOARD = [[" "] * 9 for i in range(9)]
 
-print('what is your name?')
+#players Name request
+print('what is your player name?')
 user_name = input()
-print('Welcome {}'.format(user_name))
+print('Welcome to Battleships {}!'.format(user_name))
 
+#Creates grid 
 def print_board(board):
-    print(" A B C D E F G H I J")
+    print(" A B C D E F G H I J k")
     from random import randint
 
 
 def print_board(board):
-    print("------Battleship------")
+    print("----------------------")
+    print("      Battleship"      )
+    print("----------------------")
     print("  A B C D E F G H I J")
     print("  ===================")
     row_number = 1
@@ -53,6 +57,7 @@ letters_to_numbers = {
     'H': 7,
     'I': 8,
     'J': 9,
+    'k': 10
 }
 
 #computer create 5 ships
@@ -117,7 +122,8 @@ letters_to_numbers = {
     'G': 6,
     'H': 7,
     'I': 8,
-    'J': 9
+    'J': 9,
+    'k': 10
 }
 
 #computer create 5 ships
@@ -130,7 +136,7 @@ def create_ships(board):
         
 def get_ship_location():
     row = input("Enter the row of the ship: ").upper()
-    while row not in "12345678":
+    while row not in "123456789":
         print('Not an appropriate choice, please select a valid row')
         row = input("Enter the row of the ship: ").upper()
     column = input("Enter the column of the ship: ").upper()
