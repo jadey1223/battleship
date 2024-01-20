@@ -24,8 +24,12 @@ HIDDEN_BOARD = [[" "] * 9 for x in range(9)]
 # Board for displaying hits and misses
 GUESS_BOARD = [[" "] * 9 for i in range(9)]
 
+print('what is your name?')
+user_name = input()
+print('Welcome {}'.format(user_name))
+
 def print_board(board):
-    print("  A B C D E F G H I J")
+    print(" A B C D E F G H I J")
     from random import randint
 
 
@@ -102,11 +106,7 @@ if __name__ == "__main__":
         print("You have " + str(turns) + " turns left")
         if turns == 0:
             print("You ran out of turns")
-    row_number = 1
-    for row in board:
-        print("%d|%s|" % (row_number, "|".join(row)))
-        row_number += 1
-        
+
 letters_to_numbers = {
     'A': 0,
     'B': 1,
