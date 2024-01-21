@@ -6,37 +6,37 @@ This project is a Python game that is used in the terminal. It is a fully functi
 
 Grid 9X9
 
-![grid](../Battleship/assets/images/grid_system.png)
+![grid](./assets/images/grid_system.png)
 
 A selection of different inputs for to interact with the terminal game.
 
 - Enter Name
     
- ![Enter name](../Battleship/assets/images/name.png)
+ ![Enter name](./assets/images/name.png)
 
 - Select row
 
- ![Enter row](../Battleship/assets/images/row.png)
+ ![Enter row](./assets/images/row.png)
 
 - Select column
 
-![Enter column](../Battleship/assets/images/column.png)
+![Enter column](./assets/images/column.png)
 
 A selection of different outputs that gives the user more information.
 
 - Hit or Miss
 
- ![target missed](../Battleship/assets/images/missed.png)
+ ![target missed](./assets/images/missed.png)
 
- ![target hit](../Battleship/assets/images/hit.png)
+ ![target hit](./assets/images/hit.png)
 
  - How many turns you have left
 
- ![turns left](../Battleship/assets/images/turns.png)
+ ![turns left](./assets/images/turns.png)
 
  ### comments on how to play the terminal game
 
- ![comments](../Battleship/assets/images/comments.png)
+ ![comments](./assets/images/comments.png)
 
 ## Technologies Used
 
@@ -93,5 +93,5 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
  - Python
     - No errors were found when passing through the official PEP8 syntax validator.
 
-![PEP8 checker](../Battleship/assets/images/python_syntax_checker_PEP8.png)
+![PEP8 checker](./assets/images/python_syntax_checker_PEP8.png)
 
