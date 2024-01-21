@@ -31,9 +31,7 @@ print('Welcome to Battleships {}!'.format(user_name))
 
 #Creates grid 
 def print_board(board):
-    print(" A B C D E F G H I J k")
-    from random import randint
-
+    print(" A B C D E F G H I J")
 
 def print_board(board):
     print("----------------------")
@@ -69,7 +67,7 @@ def create_ships(board):
         
 def get_ship_location():
     row = input("Enter the row of the ship: ").upper()
-    while row not in "123456789":
+    while row not in "0123456789":
         print('Not an appropriate choice, please select a valid row')
         row = input("Enter the row of the ship: ").upper()
     column = input("Enter the column of the ship: ").upper()
@@ -87,29 +85,34 @@ def count_hit_ships(board):
                 count += 1
     return count
 
+# A place marker if you hit or miss
 if __name__ == "__main__":
     create_ships(HIDDEN_BOARD)
     turns = 15
     while turns > 0:
-        print('Find the location of a battleship')
+        print('Guess a battleship location')
         print_board(GUESS_BOARD)
         row, column = get_ship_location()
         if GUESS_BOARD[row][column] == "-":
             print("You guessed that one already.")
         elif HIDDEN_BOARD[row][column] == "X":
-            print("HIT!")
+            print("--------------------")
+            print("You Hit! Do it again")
+            print("--------------------")
             GUESS_BOARD[row][column] = "X" 
             turns -= 1  
         else:
-            print("MISS!")
-            GUESS_BOARD[row][column] = "0"   
+            print("----------------------------")
+            print("You missed! Thats unforunate")
+            print("----------------------------")
+            GUESS_BOARD[row][column] = "O"   
             turns -= 1     
         if count_hit_ships(GUESS_BOARD) == 5:
             print("You win!")
             break
         print("You have " + str(turns) + " turns left")
         if turns == 0:
-            print("You ran out of turns")
+            print("Better luck next time :(")
 
 letters_to_numbers = {
     'A': 0,
@@ -122,7 +125,7 @@ letters_to_numbers = {
     'H': 7,
     'I': 8,
     'J': 9,
-    'k': 10
+    
 }
 
 #computer create 5 ships
@@ -153,33 +156,6 @@ def count_hit_ships(board):
                 count += 1
     return count
 
-# A place marker if you hit or miss
-if __name__ == "__main__":
-    create_ships(HIDDEN_BOARD)
-    turns = 25
-    while turns > 0:
-        print('Guess a battleship location')
-        print_board(GUESS_BOARD)
-        row, column = get_ship_location()
-        if GUESS_BOARD[row][column] == "-":
-            print("You guessed that one already.")
-        elif HIDDEN_BOARD[row][column] == "X":
-            print("--------------------")
-            print("You Hit! Do it again")
-            print("--------------------")
-            GUESS_BOARD[row][column] = "X" 
-            turns -= 1  
-        else:
-            print("----------------------------")
-            print("You missed! Thats unforunate")
-            print("----------------------------")
-            GUESS_BOARD[row][column] = "O"   
-            turns -= 1     
-        if count_hit_ships(GUESS_BOARD) == 5:
-            print("You win!")
-            break
-        print("You have " + str(turns) + " turns left")
-        if turns == 0:
-            print("Better luck next time :(")
+
             
     
