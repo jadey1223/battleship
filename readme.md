@@ -81,3 +81,10 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
     
  * [Python cheatsheet](https://www.pythoncheatsheet.org)   
 
+ ## Testing
+
+ - Python
+    - No errors were found when passing through the official PEP8 syntax validator.
+
+![PEP8 checker](../Battleship/assets/images/python_syntax_checker_PEP8.png)
+
