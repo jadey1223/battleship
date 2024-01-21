@@ -143,7 +143,3 @@ def count_hit_ships(board):
             if column == "X":
                 count += 1
     return count
-
-
-            
-    
