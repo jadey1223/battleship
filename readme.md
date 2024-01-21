@@ -4,25 +4,35 @@ This project is a Python game that is used in the terminal. It is a fully functi
 
 ## Features
 
+Grid 9X9
+
+![grid](../Battleship/assets/images/grid_system.png)
+
 A selection of different inputs for to interact with the terminal game.
 
 - Enter Name
     
-    - 
+ ![Enter name](../Battleship/assets/images/name.png)
 
 - Select row
 
-    - 
+ ![Enter row](../Battleship/assets/images/row.png)
 
 - Select column
 
-    - 
+![Enter column](../Battleship/assets/images/column.png)
 
 A selection of different outputs that gives the user more information.
 
 - Hit or Miss
 
-     - 
+ ![target missed](../Battleship/assets/images/missed.png)
+
+ ![target hit](../Battleship/assets/images/hit.png)
+
+ - How many turns you have left
+
+ ![turns left](../Battleship/assets/images/turns.png)
 
 ## Technologies Used
 
@@ -42,7 +52,7 @@ A selection of different outputs that gives the user more information.
 
 * [Visual studio code](https://code.visualstudio.com/)
 
-    - a code editor used to write code for web technologies such as JSX/React, HTML, CSS, SCSS, Less, and JSON.
+    - a code editor used to write code for web technologies such as JSX/React, HTML, CSS, Python, Less, and JSON.
 
 
 # Deployment
