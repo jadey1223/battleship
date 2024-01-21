@@ -6,7 +6,7 @@ from random import randint
 How to play:
 
 1. There will be eight ships of varying length arranged at random across a 10 by 10 grid.
-2. You will have 25 turns to sink all ships.
+2. You will have 15 turns to sink all ships.
 3. You can designate where to shoot by selecting a row and column, like A1.
 4. For every shot that hits or misses it will show up in the grid.
 5. A ship cannot be placed diagonally, so if a shot hits the rest of the ship is in one of 4 directions, left, right up, and down.
@@ -74,7 +74,7 @@ def get_ship_location():
         print('Not an appropriate choice, please select a valid row')
         row = input("Enter the row of the ship: ").upper()
     column = input("Enter the column of the ship: ").upper()
-    while column not in "ABCDEFGH":
+    while column not in "ABCDEFGHIJK":
         print('Not an appropriate choice, please select a valid column')
         column = input("Enter the column of the ship: ").upper()
     return int(row) - 1, letters_to_numbers[column]
@@ -90,7 +90,7 @@ def count_hit_ships(board):
 
 if __name__ == "__main__":
     create_ships(HIDDEN_BOARD)
-    turns = 10
+    turns = 15
     while turns > 0:
         print('Find the location of a battleship')
         print_board(GUESS_BOARD)
@@ -140,7 +140,7 @@ def get_ship_location():
         print('Not an appropriate choice, please select a valid row')
         row = input("Enter the row of the ship: ").upper()
     column = input("Enter the column of the ship: ").upper()
-    while column not in "ABCDEFGH":
+    while column not in "ABCDEFGHIJK":
         print('Not an appropriate choice, please select a valid column')
         column = input("Enter the column of the ship: ").upper()
     return int(row) - 1, letters_to_numbers[column]
@@ -154,6 +154,7 @@ def count_hit_ships(board):
                 count += 1
     return count
 
+# A place marker if you hit or miss
 if __name__ == "__main__":
     create_ships(HIDDEN_BOARD)
     turns = 25
@@ -164,11 +165,15 @@ if __name__ == "__main__":
         if GUESS_BOARD[row][column] == "-":
             print("You guessed that one already.")
         elif HIDDEN_BOARD[row][column] == "X":
-            print("Hit")
+            print("--------------------")
+            print("You Hit! Do it again")
+            print("--------------------")
             GUESS_BOARD[row][column] = "X" 
             turns -= 1  
         else:
-            print("MISS!")
+            print("----------------------------")
+            print("You missed! Thats unforunate")
+            print("----------------------------")
             GUESS_BOARD[row][column] = "O"   
             turns -= 1     
         if count_hit_ships(GUESS_BOARD) == 5:
@@ -177,3 +182,5 @@ if __name__ == "__main__":
         print("You have " + str(turns) + " turns left")
         if turns == 0:
             print("You ran out of turns")
+            
+    
