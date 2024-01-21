@@ -56,8 +56,7 @@ letters_to_numbers = {
     'G': 6,
     'H': 7,
     'I': 8,
-    'J': 9,
-    'k': 10
+    'J': 9
 }
 
 #computer create 5 ships
@@ -181,6 +180,6 @@ if __name__ == "__main__":
             break
         print("You have " + str(turns) + " turns left")
         if turns == 0:
-            print("You ran out of turns")
+            print("Better luck next time :(")
             
     
