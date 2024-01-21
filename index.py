@@ -6,7 +6,7 @@ from random import randint
 How to play:
 
 1. There will be eight ships of varying length arranged at random across a 10 by 10 grid.
-2. You will have 15 turns to sink all ships.
+2. You will have 25 turns to sink all ships.
 3. You can designate where to shoot by selecting a row and column, like A1.
 4. For every shot that hits or misses it will show up in the grid.
 5. A ship cannot be placed diagonally, so if a shot hits the rest of the ship is in one of 4 directions, left, right up, and down.
@@ -31,13 +31,13 @@ print('Welcome to Battleships {}!'.format(user_name))
 
 #Creates grid 
 def print_board(board):
-    print(" A B C D E F G H I J")
+    print(" A B C D E F G H I ")
 
 def print_board(board):
     print("----------------------")
     print("      Battleship"      )
     print("----------------------")
-    print("  A B C D E F G H I J")
+    print("  A B C D E F G H I ")
     print("  ===================")
     row_number = 1
     for row in board:
@@ -54,7 +54,7 @@ letters_to_numbers = {
     'G': 6,
     'H': 7,
     'I': 8,
-    'J': 9
+    
 }
 
 #computer create 5 ships
@@ -85,10 +85,11 @@ def count_hit_ships(board):
                 count += 1
     return count
 
+
 # A place marker if you hit or miss
 if __name__ == "__main__":
     create_ships(HIDDEN_BOARD)
-    turns = 15
+    turns = 25
     while turns > 0:
         print('Guess a battleship location')
         print_board(GUESS_BOARD)
@@ -114,19 +115,6 @@ if __name__ == "__main__":
         if turns == 0:
             print("Better luck next time :(")
 
-letters_to_numbers = {
-    'A': 0,
-    'B': 1,
-    'C': 2,
-    'D': 3,
-    'E': 4,
-    'F': 5,
-    'G': 6,
-    'H': 7,
-    'I': 8,
-    'J': 9,
-    
-}
 
 #computer create 5 ships
 def create_ships(board):
