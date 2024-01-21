@@ -34,6 +34,10 @@ A selection of different outputs that gives the user more information.
 
  ![turns left](../Battleship/assets/images/turns.png)
 
+ ### comments on how to play the terminal game
+
+ ![comments](../Battleship/assets/images/comments.png)
+
 ## Technologies Used
 
 ### Main Languages Used
@@ -79,7 +83,10 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 - YouTube tutorials
      -  * [YouTube](https://www.youtube.com/watch?v=tF1WRCrd_HQ&ab_channel=KnowledgeMavens)
     
- * [Python cheatsheet](https://www.pythoncheatsheet.org)   
+ * [Python cheatsheet](https://www.pythoncheatsheet.org)
+
+ * [battleship example](https://pythondex.com/python-battleship-game)
+
 
  ## Testing
 
