@@ -95,3 +95,7 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 
 ![PEP8 checker](./assets/images/python_syntax_checker_PEP8.png)
 
+## Remaining Bugs
+
+ - No remaining bugs
+
